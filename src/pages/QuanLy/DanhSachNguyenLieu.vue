@@ -10,8 +10,8 @@ import {
     deleteNguyenLieu,
     addNguyenLieu,
     updateNguyenLieu,
-} from "@/services/nguyenLieu";
-import { fetchLoaiNL } from "@/services/loaiNguyenLieu";
+} from "@/services/nguyenlieu";
+import { fetchLoaiNL } from "@/services/loainguyenlieu";
 
 const router = useRouter();
 
