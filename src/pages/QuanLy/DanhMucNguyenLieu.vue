@@ -10,7 +10,7 @@ import {
     deleteLoaiNL,
     addLoaiNL,
     updateLoaiNL,
-} from "@/services/loaiNguyenLieu";
+} from "@/services/loainguyenlieu";
 
 const router = useRouter();
 
