@@ -694,7 +694,7 @@ router.beforeEach((to, from, next) => {
                 icon: "error",
                 title: "Bạn không có quyền truy cập",
                 text: "Bạn không đủ quyền để vào trang này.",
-                confirmButtonText: "Trang chủ",
+                confirmButtonText: "Đăng nhập",
             }).then(() => {
                 next({ name: "DangNhap" });
             });
