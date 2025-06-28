@@ -696,7 +696,7 @@ router.beforeEach((to, from, next) => {
                 text: "Bạn không đủ quyền để vào trang này.",
                 confirmButtonText: "Trang chủ",
             }).then(() => {
-                next({ name: "TrangChu" });
+                next({ name: "DangNhap" });
             });
             return;
         }
