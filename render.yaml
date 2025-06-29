@@ -1,10 +1,10 @@
-# render.yaml trong thư mục gốc của repo frontend
+# render.yaml
 services:
     - type: static
-      name: nhahangchaysen-fe # Tên dịch vụ trên Render
-      rootDir: . # Thư mục gốc của repo frontend
+      name: NhaHangChaySen_FE # Đặt tên dịch vụ chính xác như trên Render
+      rootDir: . # Thư mục gốc của repository (nơi file render.yaml này nằm)
       buildCommand: npm install && npm run build
-      staticPublishPath: dist # Thư mục build của Vue.js
+      staticPublishPath: dist # Thư mục chứa các file đã build của Vite
       pullRequestPreviewsEnabled: true
       redirects:
           - source: /*
