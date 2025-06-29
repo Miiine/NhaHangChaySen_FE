@@ -650,6 +650,7 @@ export const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    mode: "history",
 });
 
 // Navigation guard để check Authentication
