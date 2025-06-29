@@ -1,0 +1,12 @@
+# render.yaml trong thư mục gốc của repo frontend
+services:
+    - type: static
+      name: nhahangchaysen-fe # Tên dịch vụ trên Render
+      rootDir: . # Thư mục gốc của repo frontend
+      buildCommand: npm install && npm run build
+      staticPublishPath: dist # Thư mục build của Vue.js
+      pullRequestPreviewsEnabled: true
+      redirects:
+          - source: /*
+            destination: /index.html
+            type: rewrite
