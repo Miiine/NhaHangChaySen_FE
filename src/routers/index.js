@@ -635,14 +635,14 @@ export const routes = [
                     roles: [2, 3],
                 },
             },
-            {
-                path: "nguyenlieu/nhapkho/chitiet/chinhsua/:maNhapKho",
-                name: "ChinhSuaPhieuNhapKho",
-                component: ChinhSuaPhieuNhapKho,
-                meta: {
-                    roles: [2, 3],
-                },
-            },
+            // {
+            //     path: "nguyenlieu/nhapkho/chitiet/chinhsua/:maNhapKho",
+            //     name: "ChinhSuaPhieuNhapKho",
+            //     component: ChinhSuaPhieuNhapKho,
+            //     meta: {
+            //         roles: [2, 3],
+            //     },
+            // },
         ],
     },
 ];
@@ -650,7 +650,6 @@ export const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    mode: "history",
 });
 
 // Navigation guard để check Authentication
